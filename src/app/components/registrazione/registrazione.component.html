@@ -1,0 +1,21 @@
+<form [formGroup]="myform" (ngSubmit)="onSubmit(myform)">
+
+  <div>
+    <label for="nome">Nome:</label>
+    <input type="text" formControlName="nome" required>
+  </div>
+
+  <div>
+    <label for="cognome">Cognome:</label>
+    <input type="text" formControlName="cognome" required>
+  </div>
+
+  <div>
+    <label for="dataNascita">Data di nascita: </label>
+    <input type="text" formControlName="dataNascita" required>
+  </div>
+
+  <button type="submit" [disabled]="!myform.valid">Click</button>
+</form>
+
+<app-card-utente></app-card-utente>
