@@ -1,0 +1,48 @@
+mat-form-field{
+
+  height:70px
+}
+mat-label {
+
+  font-size:13px;
+  margin:3px
+}
+
+
+.nascondi{
+
+  display: none;
+}
+
+mat-toolbar{
+  background-color: rgb(27, 145, 255);
+}
+#reg{
+
+  margin-left:35px;
+  font-size:30px;
+  letter-spacing: -1px;
+}
+
+#ut{
+  font-size:30px;
+  letter-spacing: -1px;
+}
+
+#form1{
+  justify-content: center;
+  border:1px solid black;
+  box-shadow:1px 1px 13px  rgb(27, 145, 255) !important;
+
+  border-radius:15px;
+  margin-left:130px;
+  margin-right:130px;
+
+}
+mat-form-field{
+  margin:5px;
+}
+
+#em{
+  width:657px
+}

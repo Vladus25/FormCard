@@ -1,0 +1,38 @@
+<div class="container justify-content-center">
+
+  <div class="row">
+    <div id="card1" class="d-inline-block card offset-1 col-1 mt-3" *ngFor="let c of output" style="width: 11rem;">
+
+      <div class="card-body text-center">
+        <p class="card-text">
+          <span id="bo">Nome : </span>
+          {{c.name}}
+        </p>
+
+        <p class="card-text">
+          <span id="bo">Cognome :</span>
+          {{c.surname}}
+        </p>
+
+        <p class="card-text">
+          <span id="bo">Email : </span>
+          {{c.email}}
+        </p>
+
+        <p class="card-text">
+          <span id="bo">Via : </span>
+          {{c.street}}
+        </p>
+
+        <p class="card-text">
+          <span id="bo">Citta : </span>
+          {{c.city}}
+        </p>
+        <div class="row">
+          <i (click)="updateUser(c.email)" class="offset-7 col-1 material-icons">settings</i>
+          <i (click)="deleteUser(c.email)" class="col-1  material-icons">delete</i>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

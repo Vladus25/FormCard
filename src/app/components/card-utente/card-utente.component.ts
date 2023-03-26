@@ -7,14 +7,14 @@ import { Component } from '@angular/core';
 })
 export class CardUtenteComponent {
 
-  constructor(){}
+  // constructor(){}
 
 
-  output:any;
+  // output:any;
 
-  takeUtente(json:any){
+  // takeUtente(json:any){
 
-    this.output = json;
-    console.log(this.output[0])
-  }
+  //   this.output = json;
+  //   console.log(this.output[0])
+  // }
 }
