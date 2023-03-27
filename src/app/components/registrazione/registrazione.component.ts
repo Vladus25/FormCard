@@ -1,5 +1,4 @@
 import { DetailsComponent } from './../details/details.component';
-// import { CardUtenteComponent } from './../card-utente/card-utente.component';
 import { Component, ViewChild } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
 
@@ -13,9 +12,6 @@ export class RegistrazioneComponent {
   constructor(private fb:FormBuilder){}
 
   myform=this.fb.group({
-    // nome:['',Validators.required],
-    // cognome:['',Validators.required],
-    // dataNascita:['',Validators.required],
     name:['',Validators.required],
     surname:['',Validators.required],
     email:['',Validators.required],
@@ -25,15 +21,12 @@ export class RegistrazioneComponent {
 
   utenti: any[] = [];
 
-  // @ViewChild(CardUtenteComponent) card!: CardUtenteComponent
   @ViewChild(DetailsComponent) cardfiglio!: DetailsComponent
 
   onSubmit(myform:any){
 
     this.utenti.push(myform.value);
     console.log(this.utenti);
-    // this.card.takeUtente(this.utenti);
-
   };
 
   showLista() {
